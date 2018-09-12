@@ -1,0 +1,54 @@
+<resources>
+
+
+    <style name="AppThemeMaterial" parent="SuperMaterialTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- BaseTheme for all lollipop and lollipop above version i.e. for all devises  -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="colorControlHighlight">#edea0d</item>
+        <item name="colorControlActivated">#f955f3</item>
+        <item name="colorControlNormal">#0cf727</item>
+        <item name="colorButtonNormal">#0cf727</item>
+        <!-- there are so many we can try-->
+
+
+        <!-- for overriding the contexttual menu on existing toolbar-->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--Customizing action mode style-->
+        <item name="actionModeStyle">@style/MyActionMode</item>
+
+    </style>
+
+    <!--Customizing action mode style-->
+    <style name="MyActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="background">@color/contextualBG</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_search_black_24dp</item>
+
+    </style>
+
+
+    <!--  customizing toolbar -->
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <!--Text color for title and subtiltle-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--color of overflow menu (3 dots) and navigation icon-->
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+
+    <!-- Pop up theme for toolbar and we can apply to other view also-->
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/overflowMenuBgWhite</item>
+        <item name="android:textColorPrimary">@color/grey_800</item>
+    </style>
+</resources>

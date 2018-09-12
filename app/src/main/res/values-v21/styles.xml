@@ -1,0 +1,36 @@
+<resources>
+
+
+    <style name="AppThemeMaterial" parent="SuperMaterialTheme">
+        <!-- Customize your Material  theme here. -->
+
+    </style>
+
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- BaseTheme for all lollipop and lollipop above version i.e. for all devises  -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="colorControlHighlight">#edea0d</item>
+        <item name="colorControlActivated">#f955f3</item>
+        <item name="colorControlNormal">#0cf727</item>
+        <item name="colorButtonNormal">#0cf727</item>
+        <!-- there are so many we can try-->
+
+        <!--enable window content transition either here or in activity-->
+<!--
+        <item name="android:windowContentTransitions">true</item>
+-->
+
+        <!-- for overriding the contexttual menu on existing toolbar-->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--Customizing action mode style-->
+        <item name="actionModeStyle">@style/MyActionMode</item>
+
+    </style>
+
+
+</resources>
