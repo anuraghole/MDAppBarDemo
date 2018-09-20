@@ -25,7 +25,9 @@
         <activity android:name=".animation.TouchFeedbackAnimationActivity" />
         <activity android:name=".animation.RippleEffectActivity" />
         <activity android:name=".animation.TransitionsActivity" />
-        <activity android:name=".animation.FullTransitionActivity"></activity>
+        <activity android:name=".animation.FullTransitionActivity" />
+        <activity android:name=".app_bar_collapsing_toolbar.AppBarLayoutActivity" />
+        <activity android:name=".app_bar_collapsing_toolbar.CollapsingToolbarLayoutActivity"></activity>
     </application>
 
 </manifest>

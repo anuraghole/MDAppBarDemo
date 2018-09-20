@@ -12,6 +12,8 @@ import android.view.View;
 import com.example.anuraghole.myapplication.animation.FullTransitionActivity;
 import com.example.anuraghole.myapplication.animation.TransitionsActivity;
 import com.example.anuraghole.myapplication.animation.RippleEffectActivity;
+import com.example.anuraghole.myapplication.app_bar_collapsing_toolbar.AppBarLayoutActivity;
+import com.example.anuraghole.myapplication.app_bar_collapsing_toolbar.CollapsingToolbarLayoutActivity;
 import com.example.anuraghole.myapplication.snackbar.SnackbarActivity;
 import com.example.anuraghole.myapplication.toolbar.ToolbarActivity;
 
@@ -99,4 +101,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void appBarLayout(View view) {
+        startActivity(new Intent(this, AppBarLayoutActivity.class));
+    }
+
+    public void collapsingToolbar(View view) {
+        startActivity(new Intent(this, CollapsingToolbarLayoutActivity.class));
+    }
 }

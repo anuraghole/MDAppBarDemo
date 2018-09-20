@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <include layout="@layout/toolbar"></include>
 
         <Button
@@ -71,6 +72,20 @@
             android:layout_height="wrap_content"
             android:onClick="fadeTransitionJava"
             android:text="fade transitions Java" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="appBarLayout"
+            android:text="App bar Layout" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="collapsingToolbar"
+            android:text="Collapsing toolbar" />
+
+
     </LinearLayout>
 
 </ScrollView>
