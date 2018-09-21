@@ -6,6 +6,19 @@
 
     </style>
 
+    <!-- TabLayout style-->
+    <style name="TabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingEnd">3dp</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextColor">@color/overflowMenuBgWhite</item>
+        <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>
+    </style>
+
+
+
+
     <!-- Base application theme. -->
     <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- BaseTheme for all lollipop and lollipop above version i.e. for all devises  -->

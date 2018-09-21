@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Fade;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
@@ -13,6 +12,7 @@ import com.example.anuraghole.myapplication.animation.FullTransitionActivity;
 import com.example.anuraghole.myapplication.animation.TransitionsActivity;
 import com.example.anuraghole.myapplication.animation.RippleEffectActivity;
 import com.example.anuraghole.myapplication.app_bar_collapsing_toolbar.AppBarLayoutActivity;
+import com.example.anuraghole.myapplication.app_bar_collapsing_toolbar.view_pager_fragment.AppBarTabLayoutActivity;
 import com.example.anuraghole.myapplication.app_bar_collapsing_toolbar.CollapsingToolbarLayoutActivity;
 import com.example.anuraghole.myapplication.snackbar.SnackbarActivity;
 import com.example.anuraghole.myapplication.toolbar.ToolbarActivity;
@@ -107,5 +107,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void collapsingToolbar(View view) {
         startActivity(new Intent(this, CollapsingToolbarLayoutActivity.class));
+    }
+
+    public void appBarWithTablayout(View view) {
+        startActivity(new Intent(this, AppBarTabLayoutActivity.class));
     }
 }

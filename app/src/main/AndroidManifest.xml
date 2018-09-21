@@ -27,7 +27,8 @@
         <activity android:name=".animation.TransitionsActivity" />
         <activity android:name=".animation.FullTransitionActivity" />
         <activity android:name=".app_bar_collapsing_toolbar.AppBarLayoutActivity" />
-        <activity android:name=".app_bar_collapsing_toolbar.CollapsingToolbarLayoutActivity"></activity>
+        <activity android:name=".app_bar_collapsing_toolbar.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".app_bar_collapsing_toolbar.view_pager_fragment.AppBarTabLayoutActivity"></activity>
     </application>
 
 </manifest>

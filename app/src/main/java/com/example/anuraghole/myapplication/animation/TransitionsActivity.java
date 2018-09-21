@@ -1,8 +1,6 @@
 package com.example.anuraghole.myapplication.animation;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
@@ -11,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.anuraghole.myapplication.Constants;
 import com.example.anuraghole.myapplication.R;
 
 public class TransitionsActivity extends AppCompatActivity {
@@ -29,14 +28,15 @@ public class TransitionsActivity extends AppCompatActivity {
 
     public void sharedElementTransitions(View view) {
         //min sdk 16(Jelly bean) is require for
-            Pair[] pair = new Pair[2];
-            pair[0] = new Pair<View, String>(ivShared, "iv_shared");
-            pair[1] = new Pair<View, String>(llInfoShared, "ll_info_shared");
+        Pair[] pair = new Pair[2];
+        pair[0] = new Pair<View, String>(ivShared, "iv_shared");
+        pair[1] = new Pair<View, String>(llInfoShared, "ll_info_shared");
 
-            ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this,pair);
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, pair);
 
 
-            Intent intent = new Intent(this, FullTransitionActivity.class);
-            startActivity(intent, options.toBundle());
+        Intent intent = new Intent(this, FullTransitionActivity.class);
+        intent.putExtra(Constants.KEY_ANIM_TYPE, Constants.TransitionType.NONE);
+        startActivity(intent, options.toBundle());
     }
 }

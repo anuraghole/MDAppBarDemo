@@ -8,15 +8,18 @@ import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.LinearInterpolator;
+import android.widget.Toast;
 
 import com.example.anuraghole.myapplication.Constants;
 import com.example.anuraghole.myapplication.R;
 
 public class FullTransitionActivity extends AppCompatActivity {
+    private static final String TAG = FullTransitionActivity.class.getSimpleName();
     Constants.TransitionType type;
 
 
@@ -37,12 +40,14 @@ public class FullTransitionActivity extends AppCompatActivity {
 
     private void initPage() {
         type = (Constants.TransitionType) getIntent().getSerializableExtra(Constants.KEY_ANIM_TYPE);
-
+        Log.d(TAG, "initAnimation: "+type);
     }
 
     private void initAnimation() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             switch (type) {
+
+
                 case EXPLODE_JAVA:
                     Explode enterTransition = new Explode();
                     enterTransition.setInterpolator(new LinearInterpolator());//try different Interpolators
@@ -76,12 +81,12 @@ public class FullTransitionActivity extends AppCompatActivity {
                     getWindow().setEnterTransition(fade);
                     break;
 
-
-
                 case FADE_XML:
                     Transition fadetransition = TransitionInflater.from(this).inflateTransition(R.transition.fade_taransition);
                     getWindow().setEnterTransition(fadetransition);
                     break;
+                case NONE:
+                  break;
             }
         }
     }

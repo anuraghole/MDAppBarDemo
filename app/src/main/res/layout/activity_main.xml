@@ -85,6 +85,12 @@
             android:onClick="collapsingToolbar"
             android:text="Collapsing toolbar" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="appBarWithTablayout"
+            android:text="TabLayout" />
+
 
     </LinearLayout>
 
